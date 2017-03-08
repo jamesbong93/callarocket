@@ -76,10 +76,16 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '192.168.10.10',
-	'username' => 'homestead',
-	'password' => 'secret',
-	'database' => 'flashbook_local',
+	# live server
+	'hostname' => '139.59.108.5',
+	'username' => 'root',
+	'password' => 'James@321',
+	'database' => 'callarocket',
+	# vagrant localhost
+	// 'hostname' => '192.168.10.10',
+	// 'username' => 'homestead',
+	// 'password' => 'secret',
+	// 'database' => 'callarocket_local',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
