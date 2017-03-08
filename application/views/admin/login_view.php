@@ -1,14 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <link rel="shortcut icon" href="image/favicon.png">
-<style>
+<html>
+        <head>
+                <title>CallaRocket</title>
+                <link rel="stylesheet" href="/assets/css/bootstrap.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="/assets/css/one-page-wonder.css" rel="stylesheet">
+
+                <!-- Custom CSS -->
+                <link rel="stylesheet" href="/assets/css/sb-admin.css" rel="stylesheet">
+                <!-- Custom Fonts -->
+                <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+                <style>
+  
+  body{
+    background-color: #f5f5f5;
+  }
+
 
 h1{
 position:absolute;left:530px;top:40px;bottom:0%;
@@ -23,32 +28,26 @@ position:absolute;left:50px;top:100px;bottom:0%;
 	  font-weight: bold;
   }
 </style>
-
-
 </head>
 <body>
-<!-- Navigation -->
+	<!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-               
-                <a class="navbar-brand" href="http://callarocket.com/">Call A Rocket</a>
+            <div class="navbar-header">           
+                <a class="navbar-brand" href="admin/login">Call A Rocket</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-	
-	<br><br>
+		<br><br>
 
     <div id = "form_att" class="col-md-4 col-md-offset-4" >
 	
 	
 	<div class="form-horizontal">
-		<?php echo form_open('admin/login/user_login'); ?>
+		
+    <form action="../../admin/login/user_login" method="post">
 			<!-- email input-->
 			 <legend id = "le">Admin login</legend>
           <div class="form-group">
@@ -71,17 +70,13 @@ position:absolute;left:50px;top:100px;bottom:0%;
 		  </div>
 		  <br><br>
 		   <legend></legend>
+       </form>
 	</div>
 	
 	</div>
-
-	
-
-
-
 </body>
 
 
+	
 
 
-</html>

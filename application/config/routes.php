@@ -60,6 +60,6 @@ $route['order/select'] = 'order';
 $route['default_controller'] = 'pages/view';		// default oage to be loaded 
 
 $route['admin'] = "admin/login";
-$route['admin/(:any)'] = "admin/$1";
-$route['admin/(:any)/(:any)'] = "admin/$1/$2";
-$route['admin/(:any)/(:any)/(:any)'] = "admin/$1/$2/$3";
+$route['admin/login/user_logout'] = "admin/login";
+// $route['admin/user'] = 'admin/login';
+
